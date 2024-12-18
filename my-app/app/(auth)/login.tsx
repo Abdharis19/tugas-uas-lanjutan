@@ -20,7 +20,10 @@ const login = () => {
                 />
             </View>
             <View>
-                <TouchableOpacity style={styles.buttom}>
+                <TouchableOpacity
+                onPress={() => {
+                    router.push("/(tabs)/home")
+                }}style={styles.buttom}>
                     <Text style={styles.buttomText}>Log In</Text>
                 </TouchableOpacity>
             </View>
